@@ -1,0 +1,19 @@
+<%= form_for @user, url: user_path do |f| %>
+
+  <%= f.label :grade %>
+  <%= f.text_field :grade %>
+
+  <%= f.label :hometown %>
+  <%= f.text_field :hometown %>
+
+  <%= f.label :activities %>
+  <%= f.text_field :activities %>
+
+  <%= f.label :major %>
+  <%= f.text_field :major %>
+
+  <%= f.label :minor %>
+  <%= f.text_field :minor %>
+
+<%= f.submit "Save" %>
+<% end %>
