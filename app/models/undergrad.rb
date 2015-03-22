@@ -1,0 +1,2 @@
+class Undergrad < User
+end

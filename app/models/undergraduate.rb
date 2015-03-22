@@ -1,2 +1,0 @@
-class Undergraduate < User
-end
