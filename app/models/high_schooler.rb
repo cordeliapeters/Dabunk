@@ -1,2 +1,0 @@
-class HighSchooler < User
-end

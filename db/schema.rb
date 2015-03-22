@@ -13,32 +13,20 @@
 
 ActiveRecord::Schema.define(version: 20150322194456) do
 
-  create_table "bookmarks", force: :cascade do |t|
-    t.integer  "high_schooler_id"
-    t.integer  "undergraduate_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+  create_table "photos", force: :cascade do |t|
+    t.integer  "undergrad_id"
+    t.integer  "college_id"
+    t.string   "category"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
-  create_table "high_schoolers", force: :cascade do |t|
+  create_table "students", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "photos", force: :cascade do |t|
-    t.integer  "undergraduate_id"
-    t.integer  "college_id"
-    t.string   "category"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
-  create_table "undergraduates", force: :cascade do |t|
-    t.string   "grade"
-    t.string   "hometown"
-    t.string   "activities"
-    t.string   "major"
-    t.string   "minor"
+  create_table "undergrads", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,6 +36,11 @@ ActiveRecord::Schema.define(version: 20150322194456) do
     t.string   "email"
     t.string   "type"
     t.string   "password_digest"
+    t.string   "grade"
+    t.string   "hometown"
+    t.string   "activities"
+    t.string   "major"
+    t.string   "minor"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

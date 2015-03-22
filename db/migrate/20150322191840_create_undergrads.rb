@@ -1,6 +1,6 @@
 class CreateUndergrads < ActiveRecord::Migration
   def change
-    create_table :undergraduates do |t|
+    create_table :undergrads do |t|
 
       t.timestamps null: false
     end
