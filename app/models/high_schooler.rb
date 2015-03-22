@@ -1,0 +1,2 @@
+class HighSchooler < User
+end
