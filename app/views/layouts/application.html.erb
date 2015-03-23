@@ -5,10 +5,20 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<%= yield %>
+  <% if current_user %>
+  <div class="navbar">
+    <a href="<%= user_photos_path(current_user)%>"> Home </a>
+    <span> DaBunk </span>
+    <a href="<%= logout_path %>"> Logout </a>
+  </div>
+  <%end%>
+  <%= yield %>
 
 </body>
 </html>

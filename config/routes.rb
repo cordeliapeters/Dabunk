@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get '/login', to: "sessions#create"
   get '/logout', to: "sessions#destroy"
 
-  resources :users
-  # resources :undergrads
-  # resources :students
+  resources :users do
+    resources :photos
+  end
 
 end

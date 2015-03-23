@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20150322194456) do
 
   create_table "photos", force: :cascade do |t|
+    t.string   "url"
     t.integer  "undergrad_id"
     t.integer  "college_id"
     t.string   "category"

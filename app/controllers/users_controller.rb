@@ -13,12 +13,12 @@ skip_before_filter  :verify_authenticity_token
         redirect_to edit_user_path(@user)
 
       else @user.is_a? Student
-        # redirect to newsfeed of all colleges
+        redirect_to user_photos_path(@user)
       end
 
     else
       flash[:errors] = @user.errors.full_messages
-
+      redirect_to :back
     end
   end
 
