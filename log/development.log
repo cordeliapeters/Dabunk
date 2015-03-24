@@ -3525,3 +3525,121 @@ Processing by PhotosController#index as HTML
   Rendered photos/_photo.js.erb (0.6ms)
   Rendered photos/index.html.erb within layouts/application (12.4ms)
 Completed 200 OK in 180ms (Views: 178.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:28:45 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (23.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/_photo.js.erb (0.7ms)
+  Rendered photos/index.html.erb within layouts/application (47.8ms)
+Completed 200 OK in 267ms (Views: 241.6ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:28:46 -0700
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:29:01 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mPhoto Load (0.5ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/_photo.js.erb (0.5ms)
+  Rendered photos/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 177ms (Views: 175.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:29:03 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (21.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/_photo.js.erb (0.1ms)
+  Rendered photos/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 212ms (Views: 189.5ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:30:33 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (16.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/_photo.js.erb (0.1ms)
+  Rendered photos/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 197ms (Views: 179.8ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:30:34 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:30:34 -0700
