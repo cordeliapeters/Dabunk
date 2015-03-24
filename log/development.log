@@ -2721,3 +2721,807 @@ Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1
 
 
 Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:36:17 -0700
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 17:47:06 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered photos/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 179ms (Views: 176.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:47:06 -0700
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 17:47:07 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered photos/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 176ms (Views: 174.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 17:47:08 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 154ms (Views: 153.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 17:49:32 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (22.1ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 207ms (Views: 183.0ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 17:49:32 -0700
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 18:14:32 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mPhoto Load (34.7ms)[0m  SELECT "photos".* FROM "photos"
+Completed 500 Internal Server Error in 78ms
+
+NoMethodError (undefined method `sort!' for #<ActiveRecord::Relation []>):
+  app/controllers/photos_controller.rb:5:in `index'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (69.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (190.0ms)
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 18:14:52 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mPhoto Load (0.5ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+Completed 500 Internal Server Error in 76ms
+
+NoMethodError (undefined method `sort!' for #<ActiveRecord::Relation []>):
+  app/controllers/photos_controller.rb:5:in `index'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (33.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (66.5ms)
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 18:15:08 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT  "photos".* FROM "photos"  ORDER BY "photos"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `sort!' for nil:NilClass):
+  app/controllers/photos_controller.rb:5:in `index'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.7ms)
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 18:15:16 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (21.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (109.2ms)
+Completed 500 Internal Server Error in 176ms
+
+ActionView::Template::Error (Missing partial photos/_photos.js, application/_photos.js with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/student/Desktop/DBC/Dabunk/app/views"
+):
+    19: 
+    20: 
+    21: <script>
+    22:   <%= render "photos.js" %>
+    23: </script>
+  app/views/photos/index.html.erb:22:in `_app_views_photos_index_html_erb___4218073407843983372_70365138515400'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (45.5ms)
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 18:15:35 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (Missing partial photos/_photos.js, application/_photos.js with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/student/Desktop/DBC/Dabunk/app/views"
+):
+    19: 
+    20: 
+    21: <script>
+    22:   <%= render "photos.js" %>
+    23: </script>
+  app/views/photos/index.html.erb:22:in `_app_views_photos_index_html_erb___4218073407843983372_70365138515400'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.5ms)
+
+
+Started GET "/users/1/photos" for ::1 at 2015-03-23 18:15:56 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/_photo.js.erb (0.6ms)
+  Rendered photos/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 193ms (Views: 189.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:15:56 -0700
+
+
+Started GET "/logout" for ::1 at 2015-03-23 18:16:10 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-03-23 18:16:10 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 219ms (Views: 217.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-03-23 18:16:23 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"type"=>"Undergrad", "name"=>"YAYA", "email"=>"yaya@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (19.5ms)[0m  INSERT INTO "users" ("type", "name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["type", "Undergrad"], ["name", "YAYA"], ["email", "yaya@gmail.com"], ["password_digest", "$2a$10$l8v.bC/.LGe7OEDfYVpVzuYTn6XIQ4854YAhllYoEqCZ.hNc4k.Ty"], ["created_at", "2015-03-24 01:16:23.665685"], ["updated_at", "2015-03-24 01:16:23.665685"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/5/edit
+Completed 302 Found in 261ms (ActiveRecord: 35.2ms)
+
+
+Started GET "/users/5/edit" for ::1 at 2015-03-23 18:16:23 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered users/edit.html.erb within layouts/application (120.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 345ms (Views: 342.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:16:24 -0700
+
+
+Started PATCH "/users/5" for ::1 at 2015-03-23 18:16:44 -0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EFU3rnhKFIsiMdh3nahxEq2F3CBA7RX8ONCGIM68zFnts/8tCasJfqTW17h9HQsuhEQOAO152AWcEK6fmXPGAg==", "undergrad"=>{"grade"=>"12", "hometown"=>"sf", "activities"=>"basketball and track", "major"=>"Math", "minor"=>"English"}, "commit"=>"Save", "id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/5" for ::1 at 2015-03-23 18:16:44 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 176ms (Views: 174.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:16:44 -0700
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:16:47 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/_photo.js.erb (0.5ms)
+  Rendered photos/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 223ms (Views: 221.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/groups/undefined/photos" for ::1 at 2015-03-23 18:17:10 -0700
+
+ActionController::RoutingError (No route matches [POST] "/groups/undefined/photos"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/student/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/student/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/student/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (7.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.4ms)
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:17:21 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/_photo.js.erb (0.1ms)
+  Rendered photos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 183ms (Views: 179.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:17:21 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:17:21 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:17:21 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:17:21 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:17:21 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:17:21 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:17:21 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:17:21 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:17:22 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:17:22 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:17:22 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:17:22 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:17:22 -0700
+
+
+Started POST "/groups/undefined/photos" for ::1 at 2015-03-23 18:17:33 -0700
+
+ActionController::RoutingError (No route matches [POST] "/groups/undefined/photos"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/student/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/student/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/student/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (10.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (46.6ms)
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:21:40 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/_photo.js.erb (0.6ms)
+  Rendered photos/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 180ms (Views: 178.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:21:40 -0700
+
+
+Started POST "/users/5/photos" for ::1 at 2015-03-23 18:21:49 -0700
+Processing by PhotosController#create as JSON
+  Parameters: {"url"=>"https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1427160109/rdco5p8vppdpgjixbaoa.jpg", "user_id"=>"5"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (17.2ms)[0m  [1mINSERT INTO "photos" ("url", "undergrad_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1427160109/rdco5p8vppdpgjixbaoa.jpg"], ["undergrad_id", 5], ["created_at", "2015-03-24 01:21:49.680804"], ["updated_at", "2015-03-24 01:21:49.680804"]]
+  [1m[35m (42.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  commit transaction
+Completed 200 OK in 78ms (Views: 0.8ms | ActiveRecord: 60.5ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:22:00 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:22:00 -0700
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:22:00 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:22:00 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:22:00 -0700
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:23:44 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (17.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/_photo.js.erb (0.8ms)
+  Rendered photos/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 246ms (Views: 226.3ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:23:45 -0700
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:24:03 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/_photo.js.erb (0.1ms)
+  Rendered photos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 177ms (Views: 176.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:24:03 -0700
+
+
+Started GET "/users/5" for ::1 at 2015-03-23 18:24:06 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (18.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 232ms (Views: 212.9ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/users/5" for ::1 at 2015-03-23 18:24:43 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (14.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Completed 200 OK in 213ms (Views: 198.3ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:24:43 -0700
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:24:43 -0700
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-23 18:24:43 -0700
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-23 18:24:43 -0700
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:24:43 -0700
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-23 18:24:43 -0700
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-03-23 18:24:44 -0700
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:24:44 -0700
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:24:44 -0700
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-23 18:24:44 -0700
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:24:44 -0700
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-23 18:24:44 -0700
+
+
+Started GET "/assets/application-17e4801155788a176bbbc02f37563650.js?body=1" for ::1 at 2015-03-23 18:24:44 -0700
+
+
+Started GET "/users/5/photos" for ::1 at 2015-03-23 18:24:47 -0700
+Processing by PhotosController#index as HTML
+  Parameters: {"user_id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos"
+  Rendered photos/_photo.js.erb (0.6ms)
+  Rendered photos/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 180ms (Views: 178.3ms | ActiveRecord: 0.4ms)
