@@ -13,7 +13,7 @@ skip_before_filter  :verify_authenticity_token
         redirect_to edit_user_path(@user)
 
       else @user.is_a? Student
-        redirect_to user_photos_path(@user)
+        redirect_to newsfeed_path(@user)
       end
 
     else

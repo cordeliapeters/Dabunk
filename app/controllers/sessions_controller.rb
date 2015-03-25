@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     @user = User.find_by(email: params[:email])
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
-      redirect_to user_photos_path(@user)
+      redirect_to newsfeed_path
 
     else
       @error = {message: "Your username or password is invalid"}

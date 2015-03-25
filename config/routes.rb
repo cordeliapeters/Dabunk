@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'newsfeed', to: "colleges#newsfeed"
   get 'explore', to: "colleges#explore"
 
+  resources :colleges
 
   resources :users do
     resources :photos #undergrads will create and delete photos

@@ -47,6 +47,10 @@
             <%if current_user.is_a? Undergrad%>
             <li><a href="<%= user_path(current_user)%>">View Profile</a></li>
             <li><a href="<%= edit_user_path(current_user) %>">Edit Profile</a></li>
+            <%end%>s
+
+            <%if current_user.is_a? Student%>
+            <li><a href="<%= user_bookmarks_path(current_user)%>">View Bookmarks</a></li>
             <%end%>
             <li><a href="<%= logout_path %>">Logout</a></li>
           </ul>

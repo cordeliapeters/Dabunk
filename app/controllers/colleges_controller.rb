@@ -26,8 +26,12 @@ class CollegesController < ApplicationController
   end
 
   def show
-    #the pictures from a single college
-    #list of the undergrads at that college
+    @college = College.find(params[:id])
+    @photos = @college.photos
+    # @people = Undergrad.where(college_id: @college.id)
+
+    #include how many students have bookmarked it
+    @num_bookmarks = Bookmark.where(college_id: @college.id).count
   end
 
 end

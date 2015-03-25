@@ -1,0 +1,13 @@
+<h1> College Show Page </h1>
+
+<h1><%= @college.name%></h1>
+
+<div class="photo-stream">
+  <% @photos.each do |photo|%>
+    <div class="photo">
+      <img src="<%= photo.url%>">
+    </div>
+  <%end%>
+</div>
+
+<!-- include list of people who go to this school -->
