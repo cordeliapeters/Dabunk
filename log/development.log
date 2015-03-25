@@ -8672,3 +8672,349 @@ Processing by CollegesController#explore as HTML
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
   Rendered colleges/explore.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 284ms (Views: 278.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "college_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "colleges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" varchar, "web_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "undergrad_id" integer, "college_id" integer, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "undergrads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "type" varchar, "password_digest" varchar, "grade" varchar, "hometown" varchar, "activities" varchar, "major" varchar, "minor" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150325032742')[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322191621')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322191840')[0m
+  [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322192037')
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322194456')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150324043946')
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "college_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "colleges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" varchar, "web_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "undergrad_id" integer, "college_id" integer, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "undergrads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "type" varchar, "password_digest" varchar, "grade" varchar, "hometown" varchar, "activities" varchar, "major" varchar, "minor" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150325032742')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322191621')
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322191840')[0m
+  [1m[35m (2.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322192037')
+  [1m[36m (3.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322194456')[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150324043946')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRelationships (20150325050512)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150325050512"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUndergrad Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Undergrad')[0m
+  [1m[35mUndergrad Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."type" IN ('Undergrad')  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('Student')  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Student')
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."type" IN ('Student')  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."type" IN ('Student')  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Dartmouth"], ["created_at", "2015-03-25 05:14:48.198470"], ["updated_at", "2015-03-25 05:14:48.198470"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvard"], ["created_at", "2015-03-25 05:14:48.206742"], ["updated_at", "2015-03-25 05:14:48.206742"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Yale"], ["created_at", "2015-03-25 05:14:48.212767"], ["updated_at", "2015-03-25 05:14:48.212767"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Denver"], ["created_at", "2015-03-25 05:14:48.219466"], ["updated_at", "2015-03-25 05:14:48.219466"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Duke"], ["created_at", "2015-03-25 05:14:48.225108"], ["updated_at", "2015-03-25 05:14:48.225108"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Princeton"], ["created_at", "2015-03-25 05:14:48.230199"], ["updated_at", "2015-03-25 05:14:48.230199"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Syracuse"], ["created_at", "2015-03-25 05:14:48.234623"], ["updated_at", "2015-03-25 05:14:48.234623"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Bucknell"], ["created_at", "2015-03-25 05:14:48.239590"], ["updated_at", "2015-03-25 05:14:48.239590"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Brown"], ["created_at", "2015-03-25 05:14:48.244206"], ["updated_at", "2015-03-25 05:14:48.244206"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvey Mudd"], ["created_at", "2015-03-25 05:14:48.250536"], ["updated_at", "2015-03-25 05:14:48.250536"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "college_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "colleges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" varchar, "web_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "undergrad_id" integer, "college_id" integer, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "undergrads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "type" varchar, "password_digest" varchar, "grade" varchar, "hometown" varchar, "activities" varchar, "major" varchar, "minor" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325050512')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322191621')[0m
+  [1m[35m (2.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322191840')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322192037')[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322194456')
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150324043946')[0m
+  [1m[35m (2.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325032742')
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "college_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "colleges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" varchar, "web_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "undergrad_id" integer, "college_id" integer, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "undergrads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "type" varchar, "password_digest" varchar, "grade" varchar, "hometown" varchar, "activities" varchar, "major" varchar, "minor" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325050512')
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322191621')[0m
+  [1m[35m (2.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322191840')
+  [1m[36m (1.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322192037')[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322194456')
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150324043946')[0m
+  [1m[35m (2.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325032742')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Dartmouth"], ["created_at", "2015-03-25 05:14:57.633112"], ["updated_at", "2015-03-25 05:14:57.633112"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvard"], ["created_at", "2015-03-25 05:14:57.641801"], ["updated_at", "2015-03-25 05:14:57.641801"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Yale"], ["created_at", "2015-03-25 05:14:57.647334"], ["updated_at", "2015-03-25 05:14:57.647334"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Denver"], ["created_at", "2015-03-25 05:14:57.652385"], ["updated_at", "2015-03-25 05:14:57.652385"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Duke"], ["created_at", "2015-03-25 05:14:57.656684"], ["updated_at", "2015-03-25 05:14:57.656684"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Princeton"], ["created_at", "2015-03-25 05:14:57.660844"], ["updated_at", "2015-03-25 05:14:57.660844"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Syracuse"], ["created_at", "2015-03-25 05:14:57.665806"], ["updated_at", "2015-03-25 05:14:57.665806"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Bucknell"], ["created_at", "2015-03-25 05:14:57.671418"], ["updated_at", "2015-03-25 05:14:57.671418"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Brown"], ["created_at", "2015-03-25 05:14:57.676067"], ["updated_at", "2015-03-25 05:14:57.676067"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvey Mudd"], ["created_at", "2015-03-25 05:14:57.682674"], ["updated_at", "2015-03-25 05:14:57.682674"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "college_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "colleges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" varchar, "web_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "undergrad_id" integer, "college_id" integer, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.3ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "undergrads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "type" varchar, "password_digest" varchar, "grade" varchar, "hometown" varchar, "activities" varchar, "major" varchar, "minor" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325050512')
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322191621')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322191840')
+  [1m[36m (2.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322192037')[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322194456')
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150324043946')[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325032742')
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "college_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "colleges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" varchar, "web_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "undergrad_id" integer, "college_id" integer, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "undergrads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "type" varchar, "password_digest" varchar, "grade" varchar, "hometown" varchar, "activities" varchar, "major" varchar, "minor" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325050512')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322191621')[0m
+  [1m[35m (1.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322191840')
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322192037')[0m
+  [1m[35m (2.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322194456')
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150324043946')[0m
+  [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325032742')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Dartmouth"], ["created_at", "2015-03-25 05:17:01.488377"], ["updated_at", "2015-03-25 05:17:01.488377"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvard"], ["created_at", "2015-03-25 05:17:01.507580"], ["updated_at", "2015-03-25 05:17:01.507580"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Yale"], ["created_at", "2015-03-25 05:17:01.512387"], ["updated_at", "2015-03-25 05:17:01.512387"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Denver"], ["created_at", "2015-03-25 05:17:01.516867"], ["updated_at", "2015-03-25 05:17:01.516867"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Duke"], ["created_at", "2015-03-25 05:17:01.521749"], ["updated_at", "2015-03-25 05:17:01.521749"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Princeton"], ["created_at", "2015-03-25 05:17:01.525841"], ["updated_at", "2015-03-25 05:17:01.525841"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Syracuse"], ["created_at", "2015-03-25 05:17:01.530275"], ["updated_at", "2015-03-25 05:17:01.530275"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Bucknell"], ["created_at", "2015-03-25 05:17:01.534976"], ["updated_at", "2015-03-25 05:17:01.534976"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Brown"], ["created_at", "2015-03-25 05:17:01.539071"], ["updated_at", "2015-03-25 05:17:01.539071"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvey Mudd"], ["created_at", "2015-03-25 05:17:01.543424"], ["updated_at", "2015-03-25 05:17:01.543424"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "college_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "colleges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" varchar, "web_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "undergrad_id" integer, "college_id" integer, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (3.3ms)[0m  CREATE TABLE "undergrads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "type" varchar, "password_digest" varchar, "grade" varchar, "hometown" varchar, "activities" varchar, "major" varchar, "minor" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325050512')
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322191621')[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322191840')
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322192037')[0m
+  [1m[35m (2.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322194456')
+  [1m[36m (2.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150324043946')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325032742')
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "bookmarks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "college_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE "colleges" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" varchar, "city" varchar, "state" varchar, "zip" varchar, "web_url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" varchar, "undergrad_id" integer, "college_id" integer, "category" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "relationships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "follower_id" integer, "followed_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (2.2ms)[0m  CREATE TABLE "undergrads" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "type" varchar, "password_digest" varchar, "grade" varchar, "hometown" varchar, "activities" varchar, "major" varchar, "minor" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325050512')
+  [1m[36m (2.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322191621')[0m
+  [1m[35m (9.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322191840')
+  [1m[36m (2.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150322192037')[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150322194456')
+  [1m[36m (2.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150324043946')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150325032742')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Dartmouth"], ["created_at", "2015-03-25 05:17:30.766598"], ["updated_at", "2015-03-25 05:17:30.766598"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvard"], ["created_at", "2015-03-25 05:17:30.786957"], ["updated_at", "2015-03-25 05:17:30.786957"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Yale"], ["created_at", "2015-03-25 05:17:30.791864"], ["updated_at", "2015-03-25 05:17:30.791864"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Denver"], ["created_at", "2015-03-25 05:17:30.796326"], ["updated_at", "2015-03-25 05:17:30.796326"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Duke"], ["created_at", "2015-03-25 05:17:30.800934"], ["updated_at", "2015-03-25 05:17:30.800934"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Princeton"], ["created_at", "2015-03-25 05:17:30.804822"], ["updated_at", "2015-03-25 05:17:30.804822"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Syracuse"], ["created_at", "2015-03-25 05:17:30.808910"], ["updated_at", "2015-03-25 05:17:30.808910"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Bucknell"], ["created_at", "2015-03-25 05:17:30.812993"], ["updated_at", "2015-03-25 05:17:30.812993"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Brown"], ["created_at", "2015-03-25 05:17:30.817624"], ["updated_at", "2015-03-25 05:17:30.817624"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvey Mudd"], ["created_at", "2015-03-25 05:17:30.822332"], ["updated_at", "2015-03-25 05:17:30.822332"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Dartmouth"], ["created_at", "2015-03-25 05:18:05.906777"], ["updated_at", "2015-03-25 05:18:05.906777"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvard"], ["created_at", "2015-03-25 05:18:05.915506"], ["updated_at", "2015-03-25 05:18:05.915506"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Yale"], ["created_at", "2015-03-25 05:18:05.920299"], ["updated_at", "2015-03-25 05:18:05.920299"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Denver"], ["created_at", "2015-03-25 05:18:05.925451"], ["updated_at", "2015-03-25 05:18:05.925451"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Duke"], ["created_at", "2015-03-25 05:18:05.930075"], ["updated_at", "2015-03-25 05:18:05.930075"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Princeton"], ["created_at", "2015-03-25 05:18:05.934736"], ["updated_at", "2015-03-25 05:18:05.934736"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Syracuse"], ["created_at", "2015-03-25 05:18:05.940792"], ["updated_at", "2015-03-25 05:18:05.940792"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Bucknell"], ["created_at", "2015-03-25 05:18:05.946537"], ["updated_at", "2015-03-25 05:18:05.946537"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Brown"], ["created_at", "2015-03-25 05:18:05.950920"], ["updated_at", "2015-03-25 05:18:05.950920"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "colleges" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Harvey Mudd"], ["created_at", "2015-03-25 05:18:05.954641"], ["updated_at", "2015-03-25 05:18:05.954641"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUndergrad Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Undergrad')[0m
+  [1m[35mUndergrad Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Undergrad')
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUndergrad Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."type" IN ('Undergrad')  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mCollege Load (0.4ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
+  [1m[35mUndergrad Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Undergrad')
+  [1m[36mCollege Load (0.4ms)[0m  [1mSELECT  "colleges".* FROM "colleges"  ORDER BY "colleges"."id" ASC LIMIT 1[0m
+  [1m[35mUndergrad Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Undergrad') AND "users"."college_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: users.college_id: SELECT "users".* FROM "users" WHERE "users"."type" IN ('Undergrad') AND "users"."college_id" = ?
+  [1m[36mCollege Load (0.4ms)[0m  [1mSELECT  "colleges".* FROM "colleges"  ORDER BY "colleges"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325032742) do
+ActiveRecord::Schema.define(version: 20150325050512) do
 
   create_table "bookmarks", force: :cascade do |t|
     t.integer  "college_id"
@@ -38,6 +38,13 @@ ActiveRecord::Schema.define(version: 20150325032742) do
     t.string   "category"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+  end
+
+  create_table "relationships", force: :cascade do |t|
+    t.integer  "follower_id"
+    t.integer  "followed_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "students", force: :cascade do |t|

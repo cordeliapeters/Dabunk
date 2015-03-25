@@ -12,6 +12,8 @@ require 'csv'
 #   end
 # end
 
+
+
 College.create(name: "Dartmouth")
 College.create(name: "Harvard")
 College.create(name: "Yale")
@@ -22,3 +24,8 @@ College.create(name: "Syracuse")
 College.create(name: "Bucknell")
 College.create(name: "Brown")
 College.create(name: "Harvey Mudd")
+
+User.create(type: "Undergrad", name: "Cordelia Peters")
+User.create(type: "Undergrad", name: "August Peters")
+User.create(type: "Undergrad", name: "Natalie Gellman")
+User.create(type: "Undergrad", name: "Natalie Bruener")
