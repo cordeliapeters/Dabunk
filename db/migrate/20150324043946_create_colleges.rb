@@ -7,6 +7,7 @@ class CreateColleges < ActiveRecord::Migration
       t.string :state
       t.string :zip
       t.string :web_url
+      t.boolean :greek_life
 
       t.timestamps null: false
     end

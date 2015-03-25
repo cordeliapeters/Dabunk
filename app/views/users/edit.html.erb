@@ -1,19 +1,24 @@
+<h1>Profile Information</h1>
+
 <%= form_for @user, url: user_path do |f| %>
 
+  <%= f.label :college %>
+  <%= f.text_field :college %><br>
+
   <%= f.label :grade %>
-  <%= f.text_field :grade %>
+  <%= f.text_field :grade %><br>
 
   <%= f.label :hometown %>
-  <%= f.text_field :hometown %>
+  <%= f.text_field :hometown %><br>
 
   <%= f.label :activities %>
-  <%= f.text_field :activities %>
+  <%= f.text_field :activities %><br>
 
   <%= f.label :major %>
-  <%= f.text_field :major %>
+  <%= f.text_field :major %><br>
 
   <%= f.label :minor %>
-  <%= f.text_field :minor %>
+  <%= f.text_field :minor %><br>
 
-<%= f.submit "Save" %>
+<%= f.submit "Save Changes" %>
 <% end %>

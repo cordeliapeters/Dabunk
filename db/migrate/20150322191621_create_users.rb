@@ -10,6 +10,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :activities
       t.string :major
       t.string :minor
+      t.integer :college_id
+      t.string :greek
 
       t.timestamps
     end

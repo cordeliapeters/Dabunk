@@ -6,13 +6,13 @@ Rails.application.routes.draw do
   get '/login', to: "sessions#create"
   get '/logout', to: "sessions#destroy"
 
-  get 'newsfeed', to: "user#newsfeed"
-  get 'explore', to: "user#explore"
+  get 'newsfeed', to: "colleges#newsfeed"
+  get 'explore', to: "colleges#explore"
 
 
   resources :users do
-    resources :photos
-    resources :bookmarks
+    resources :photos #undergrads will create and delete photos
+    resources :bookmarks #students will bookmark and unbookmark colleges
   end
 
 end

@@ -25,24 +25,29 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<%= user_photos_path(current_user)%>">Dabunk</a>
+      <a class="navbar-brand" href="<%= newsfeed_path %>">Dabunk</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="<%= user_photos_path(current_user)%>"> Explore </a></li>
+        <li><a href="<%= explore_path %>"> Explore </a></li>
       </ul>
 
 
       <ul class="nav navbar-nav navbar-right">
-        <ul class="nav navbar-nav">
-          <li><a href="#"> Profile </a></li>
-        </ul>
+
+      <ul class="nav navbar-nav">
+        <li><a href="<%= newsfeed_path %>"> Home </a></li>
+      </ul>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <%= current_user.name %> <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
+            <%if current_user.is_a? Undergrad%>
+            <li><a href="<%= user_path(current_user)%>">View Profile</a></li>
+            <li><a href="<%= edit_user_path(current_user) %>">Edit Profile</a></li>
+            <%end%>
             <li><a href="<%= logout_path %>">Logout</a></li>
           </ul>
         </li>
