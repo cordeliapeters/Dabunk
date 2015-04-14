@@ -10681,3 +10681,217 @@ Processing by PhotosController#create as JSON
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  commit transaction
 Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 4.1ms)
+  [1m[36mPhoto Load (2.7ms)[0m  [1mSELECT "photos".* FROM "photos"[0m
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 12:43:58 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[36mUser Load (12.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBookmark Load (0.2ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.6ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 469ms (Views: 370.3ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:43:59 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:00 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:00 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:00 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:00 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:00 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 12:44:00 -0400
+
+
+Started POST "/users/1/photos" for ::1 at 2015-04-14 12:44:09 -0400
+Processing by PhotosController#create as JSON
+  Parameters: {"url"=>"https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429029849/lkph8ca47h55gko537pm.jpg", "user_id"=>"1"}
+  [1m[36mUser Load (15.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 36ms
+
+NoMethodError (undefined method `college_id' for #<Undergrad:0x007fe7f2bafce8>):
+  app/controllers/photos_controller.rb:17:in `create'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (40.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (31.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (70.9ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 12:44:19 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (12.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.3ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.1ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 546ms (Views: 438.6ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 12:44:20 -0400
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 12:45:38 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (19.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.2ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (1.1ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 350ms (Views: 326.1ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 12:45:39 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.2ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.1ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 300ms (Views: 293.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 12:45:42 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 313ms (Views: 311.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-04-14 12:45:44 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/edit.html.erb within layouts/application (45.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 350ms (Views: 347.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 12:45:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 219ms (Views: 217.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 12:45:47 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.1ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.2ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 392ms (Views: 389.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 12:45:49 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (23.6ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 317ms (Views: 276.0ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 12:45:52 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.2ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.0ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 279ms (Views: 223.5ms | ActiveRecord: 0.4ms)
