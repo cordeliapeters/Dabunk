@@ -10895,3 +10895,2110 @@ Processing by CollegesController#newsfeed as HTML
   Rendered colleges/_photo.js.erb (0.0ms)
   Rendered colleges/newsfeed.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 279ms (Views: 223.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 13:19:45 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (18.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.1ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.3ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 469ms (Views: 447.9ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:19:46 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:19:50 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/student/Desktop/DBC/Dabunk/app/views/users/show.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/student/Desktop/DBC/Dabunk/app/views/users/show.html.erb:14: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/show.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/show.html.erb:14: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (29.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (65.3ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:19:51 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/student/Desktop/DBC/Dabunk/app/views/users/show.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/student/Desktop/DBC/Dabunk/app/views/users/show.html.erb:14: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/show.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/show.html.erb:14: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (116.2ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:20:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (11.8ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 260ms (Views: 232.3ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:20:06 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:20:07 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:20:07 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:20:07 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:21:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 6ms
+
+SyntaxError (/Users/student/Desktop/DBC/Dabunk/app/views/users/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/student/Desktop/DBC/Dabunk/app/views/users/show.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/show.html.erb:19: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/show.html.erb:21: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:21:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 296ms (Views: 294.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:21:46 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:21:47 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:22:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 300ms (Views: 299.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:22:06 -0400
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 13:22:51 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.2ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.1ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 465ms (Views: 370.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/1/photos" for ::1 at 2015-04-14 13:23:09 -0400
+Processing by PhotosController#create as JSON
+  Parameters: {"url"=>"https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429032188/pcajhsx9tp8lebtdpp0v.jpg", "user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (39.7ms)[0m  [1mINSERT INTO "photos" ("url", "undergrad_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429032188/pcajhsx9tp8lebtdpp0v.jpg"], ["undergrad_id", 1], ["created_at", "2015-04-14 17:23:09.424954"], ["updated_at", "2015-04-14 17:23:09.424954"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 59ms (Views: 1.2ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:23:13 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 292ms (Views: 291.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:23:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 229ms (Views: 227.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/application-5266d2988799ecc8fe6e81eaab412e7d.css?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:23:27 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:25:17 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 507ms (Views: 505.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/users-12cb7db8bb374db6948551e3b794a574.css?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/application-21a94a73cc685403dd453961be9a6e37.css?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:18 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:25:31 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 332ms (Views: 328.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/users-5322fd5f2272e309eaa51a5f1fcb6581.css?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/application-ecdb5f376341e94a589c02bde765cdf7.css?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:25:32 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:26:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 344ms (Views: 342.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/users-b4a129124c8bdb21ed90b7eac13f0006.css?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/application-10391446e60627a8a6a022c1e2f1f038.css?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:33 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:34 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:34 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:34 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:34 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:26:34 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:34 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:26:59 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 381ms (Views: 379.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/users-e8d5c46f740c09f78da239e67ccf3420.css?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/application-a99d3da63153247dd1781485e3ae57cd.css?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:26:59 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:27:20 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 350ms (Views: 348.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/users-8ea0057cc9e292dfc36c596b98a10afd.css?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/application-2a4b9c6f07eb4be5163c3f31a9e1c202.css?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:21 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:27:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 527ms (Views: 526.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/users-6df6bdf382de4339e2b52dd9488b3ff2.css?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/application-44fb849d96bd9c35c58be6ab598a5ac5.css?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:27:28 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:27:35 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 323ms (Views: 322.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/application-ee80c8d6523cbea89c80dae32b5461a9.css?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/users-61f2003c6f50694a767da70498c39a9f.css?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:27:36 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:29:17 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `college_id' for #<Undergrad:0x007fe7f2c7d350>):
+    1: <div class="profile-header">
+    2:   <%= current_user.name %>
+    3:   <% if current_user.is_a? Undergrad%>
+    4:     <span> Student at <%= College.find(current_user.college_id).name %></span>
+    5:   <%end%>
+    6: </div>
+    7: 
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb__1370506076656061343_70317093626600'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (80.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (106.8ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:29:23 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `college_id' for #<Undergrad:0x007fe7f2c1ee68>):
+    1: <div class="profile-header">
+    2:   <%= current_user.name %>
+    3:   <% if current_user.is_a? Undergrad%>
+    4:     <!-- <span> Student at <%= College.find(current_user.college_id).name %></span> -->
+    5:   <%end%>
+    6: </div>
+    7: 
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb__1370506076656061343_70317093529840'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.7ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:29:34 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `college_id' for #<Undergrad:0x007fe7f1d82698>):
+    1: <div class="profile-header">
+    2:   <%= current_user.name %>
+    3:   <% if current_user.is_a? Undergrad%>
+    4:     <!-- Student at <%= College.find(current_user.college_id).name %> -->
+    5:   <%end%>
+    6: </div>
+    7: 
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb__1370506076656061343_70317085396580'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (83.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:29:55 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 305ms (Views: 303.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/users-61f2003c6f50694a767da70498c39a9f.css?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/application-ee80c8d6523cbea89c80dae32b5461a9.css?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:29:55 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:30:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 293ms (Views: 291.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/users-61f2003c6f50694a767da70498c39a9f.css?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/application-ee80c8d6523cbea89c80dae32b5461a9.css?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:30:02 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:31:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 315ms (Views: 314.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/users-61f2003c6f50694a767da70498c39a9f.css?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/application-ee80c8d6523cbea89c80dae32b5461a9.css?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:31:50 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:33:26 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 290ms (Views: 288.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/application-ee80c8d6523cbea89c80dae32b5461a9.css?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/users-61f2003c6f50694a767da70498c39a9f.css?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:33:27 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:33:34 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 305ms (Views: 303.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/users-61f2003c6f50694a767da70498c39a9f.css?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/application-ee80c8d6523cbea89c80dae32b5461a9.css?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:33:34 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:44:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 362ms (Views: 361.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/users-b644c99bd34aafbba1cbb05a84d82f23.css?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/application-ca582ee1818d6e898129b4da5b73300b.css?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:44:26 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:44:39 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.1ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 329ms (Views: 328.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/users-60e7acbea05e36b445961574650d00a7.css?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/application-cd8f18ad50bd75ef4be6adb04334eb75.css?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:44:40 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:45:20 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 332ms (Views: 330.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/users-dbc96713916d9e3872a1964df2aa058b.css?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/application-04fee9aea42bcd445ffa585069ff6aa6.css?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:45:21 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:45:34 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 346ms (Views: 344.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:34 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:34 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:45:34 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:34 -0400
+
+
+Started GET "/assets/users-328e192f25825a45d28d372c700dcb7b.css?body=1" for ::1 at 2015-04-14 13:45:34 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/application-ebe9cf0c39728323890dfbf71a081e34.css?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:45:35 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:47:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 303ms (Views: 302.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/users-328e192f25825a45d28d372c700dcb7b.css?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/application-ebe9cf0c39728323890dfbf71a081e34.css?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:09 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:47:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 292ms (Views: 290.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/users-328e192f25825a45d28d372c700dcb7b.css?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/application-ebe9cf0c39728323890dfbf71a081e34.css?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:47:24 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:47:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 314ms (Views: 312.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/users-328e192f25825a45d28d372c700dcb7b.css?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/application-ebe9cf0c39728323890dfbf71a081e34.css?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:47:41 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:48:00 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 387ms (Views: 385.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/application-ebe9cf0c39728323890dfbf71a081e34.css?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/users-328e192f25825a45d28d372c700dcb7b.css?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:48:01 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:48:24 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 360ms (Views: 358.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/application-e411f080beaf8d9327df09b8f3dbdad1.css?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/users-64ab81621eb05a3284a131949504fa73.css?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:25 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:48:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 355ms (Views: 353.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/application-22c6e960bf04e72593b01f03aa71545a.css?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:48:37 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:48:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 217ms (Views: 215.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-04-14 13:48:56 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/edit.html.erb within layouts/application (5.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 321ms (Views: 318.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:49:13 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 306ms (Views: 303.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/application-22c6e960bf04e72593b01f03aa71545a.css?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:49:14 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:51:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (1.4ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 314ms (Views: 312.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/application-22c6e960bf04e72593b01f03aa71545a.css?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:51:03 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:58:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 313ms (Views: 311.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/application-22c6e960bf04e72593b01f03aa71545a.css?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:58:12 -0400
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:58:20 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 296ms (Views: 294.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/colleges-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/application-22c6e960bf04e72593b01f03aa71545a.css?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/assets/application-d7eca2729d9f3ab230c989ab9b65a7dc.js?body=1" for ::1 at 2015-04-14 13:58:20 -0400
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 13:58:29 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.1ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.1ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 334ms (Views: 330.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 13:58:31 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (0.3ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 296ms (Views: 292.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 13:58:34 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 242ms (Views: 240.2ms | ActiveRecord: 0.6ms)
