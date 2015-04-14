@@ -1,6 +1,7 @@
 var photos = []
 
 $(".upload-photo").on("click", function(){
+  console.log("clicked");
 
   cloudinary.openUploadWidget({ cloud_name: 'keepyourfriendsclose', upload_preset: 'wqsntyaq', max_files: 1},
 
@@ -17,8 +18,8 @@ $(".upload-photo").on("click", function(){
         data: {url: url, user_id: user_id}
       }).done(function(response){
         console.log("success");
-        $(".photo-stream").append("<div class='photo'>
-      <img src='"+response.url+"'></div>")
+        console.log(response.url)
+        $(".photo-stream").append("<div class='photo'>><img src="+response.url+"></div>")
       })
     });
 })
