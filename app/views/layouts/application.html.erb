@@ -64,12 +64,15 @@
         </li>
       </ul>
 
-      <form class="navbar-form navbar-right" role="search" action="/colleges/search">
+      <%= form_for "college", url: select_colleges_path,  :html => {class: "navbar-form navbar-right"}, action: "select_school" do |f| %>
+
         <div class="form-group">
-          <input type="text" class="search-bar form-control" name="school_name" placeholder="Search for Colleges">
+          <%= f.text_field :name, placeholder: "Search for Colleges", class: "search-bar form-control" %>
         </div>
+
         <button type="submit" class="search-schools btn btn-default">Search</button>
-      </form>
+
+      <%end%>
 
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

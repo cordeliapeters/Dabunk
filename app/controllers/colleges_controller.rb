@@ -1,5 +1,8 @@
 class CollegesController < ApplicationController
 
+  def index
+  end
+
   def newsfeed
     @bookmarks = Bookmark.where(user_id: current_user.id)
     @selected_schools = []
@@ -40,9 +43,11 @@ class CollegesController < ApplicationController
     render json: search_value
   end
 
-  def search_school
+  def select_school
+    p "**************************"
     p params
-    school = College.where(name: params[:school_name])
+    school = College.where(school_params)[0]
+    p school
     if school
       redirect_to college_path(school)
     else
@@ -51,5 +56,10 @@ class CollegesController < ApplicationController
     end
   end
 
+
+  private
+  def school_params
+    params.require(:college).permit(:name)
+  end
 
 end

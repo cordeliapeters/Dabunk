@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   resources :colleges do
     collection do
       get 'search/:school_name', to: "colleges#search"
-      get 'search', to: "colleges#search_school"
+      post 'select', :action => 'select_school', as: 'select'
     end
   end
 
