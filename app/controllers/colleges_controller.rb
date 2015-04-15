@@ -34,4 +34,21 @@ class CollegesController < ApplicationController
     @num_bookmarks = Bookmark.where(college_id: @college.id).count
   end
 
+  def search
+    p params
+    search_value = College.search_by_school_name(params[:school_name]).limit(10)
+    render json: search_value
+  end
+
+  def search_school
+    school = College.where(name: params[:school_name])
+    if school
+      redirect_to college_path(school)
+    else
+      flash[:errors] = "No results. Please try again."
+      redirect_to root_url
+    end
+  end
+
+
 end

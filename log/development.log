@@ -27011,3 +27011,2157 @@ Migrating to CreateRelationships (20150325050512)
   [1m[35m (1.6ms)[0m  commit transaction
   [1m[36mCollege Load (27.4ms)[0m  [1mSELECT "colleges".* FROM "colleges"[0m
   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "colleges"
+
+
+Started GET "/" for ::1 at 2015-04-14 21:57:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 1247ms
+
+ActionView::Template::Error (SyntaxError: [stdin]:3:3: reserved word 'function'
+  (in /Users/student/Desktop/DBC/Dabunk/app/assets/javascripts/colleges.coffee)):
+    3: <head>
+    4:   <title>Dabunk</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    9:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___2140923389925772893_70129084464220'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (82.4ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 21:57:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 151ms
+
+ActionView::Template::Error (SyntaxError: [stdin]:3:3: reserved word 'function'
+  (in /Users/student/Desktop/DBC/Dabunk/app/assets/javascripts/colleges.coffee)):
+    3: <head>
+    4:   <title>Dabunk</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    9:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___2140923389925772893_70129084464220'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (31.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (58.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 22:00:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 199ms
+
+ActionView::Template::Error (SyntaxError: [stdin]:3:19: reserved word 'function'
+  (in /Users/student/Desktop/DBC/Dabunk/app/assets/javascripts/colleges.coffee)):
+    3: <head>
+    4:   <title>Dabunk</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    9:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___2140923389925772893_70129084464220'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 22:01:02 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 528ms (Views: 526.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/colleges-2148b922d6f652fff2f9e0578e189fba.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/application-5912dc6f0899eaa68137841d6785dc24.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:03 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 22:01:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 285ms (Views: 284.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:01:51 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:01:51 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:01:51 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:01:51 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:01:51 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:01:51 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/colleges-2148b922d6f652fff2f9e0578e189fba.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/application-5912dc6f0899eaa68137841d6785dc24.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:01:52 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 22:02:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 233ms (Views: 231.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/colleges-2148b922d6f652fff2f9e0578e189fba.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started GET "/assets/application-5912dc6f0899eaa68137841d6785dc24.js?body=1" for ::1 at 2015-04-14 22:02:03 -0400
+
+
+Started POST "/users" for ::1 at 2015-04-14 22:02:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"type"=>"Undergrad", "name"=>"Cordelia Peters", "email"=>"cordelia.peters@gmail.com", "password"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("type", "name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["type", "Undergrad"], ["name", "Cordelia Peters"], ["email", "cordelia.peters@gmail.com"], ["password_digest", "$2a$10$hc/1a93ZplT9woqXszSJj.VsIoZG/wprLZVYQVyWbXc9.H6TDlYBu"], ["created_at", "2015-04-15 02:02:38.540261"], ["updated_at", "2015-04-15 02:02:38.540261"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/1/edit
+Completed 302 Found in 319ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-04-14 22:02:38 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/edit.html.erb within layouts/application (151.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 530ms (Views: 469.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/colleges-2148b922d6f652fff2f9e0578e189fba.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started GET "/assets/application-5912dc6f0899eaa68137841d6785dc24.js?body=1" for ::1 at 2015-04-14 22:02:39 -0400
+
+
+Started PATCH "/users/1" for ::1 at 2015-04-14 22:03:02 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GwvSjThnPndwNpvSJIKWVANbnJlNNU13zGX6AkJVxtzm7RoOSYYjgvbRlB3EN+xoKppOueChgI5opdK9FZrMhw==", "undergrad"=>{"college"=>"Dartmouth", "grade"=>"11", "hometown"=>"San Francisco", "activities"=>"Soccer", "major"=>"Econ", "minor"=>"Math"}, "commit"=>"Save Changes", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 22:03:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 303ms (Views: 301.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/application-5912dc6f0899eaa68137841d6785dc24.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/colleges-2148b922d6f652fff2f9e0578e189fba.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:03:02 -0400
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 22:03:07 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.2ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.4ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 294ms (Views: 218.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/1/photos" for ::1 at 2015-04-14 22:03:25 -0400
+Processing by PhotosController#create as JSON
+  Parameters: {"url"=>"https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429063404/tjgawu21enjnumk3lxla.jpg", "user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "photos" ("url", "undergrad_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429063404/tjgawu21enjnumk3lxla.jpg"], ["undergrad_id", 1], ["created_at", "2015-04-15 02:03:25.556030"], ["updated_at", "2015-04-15 02:03:25.556030"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 21ms (Views: 0.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 22:03:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 365ms (Views: 364.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 22:03:41 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBookmark Load (0.1ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.0ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 340ms (Views: 336.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:03:42 -0400
+Processing by CollegesController#explore as HTML
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:17:in `explore'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (54.8ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:03:43 -0400
+Processing by CollegesController#explore as HTML
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:17:in `explore'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (76.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (103.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (133.0ms)
+
+
+Started GET "/colleges/search/s" for ::1 at 2015-04-14 22:03:51 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"s"}
+Completed 500 Internal Server Error in 6ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (49.7ms)
+
+
+Started GET "/colleges/search/" for ::1 at 2015-04-14 22:03:53 -0400
+Processing by CollegesController#show as */*
+  Parameters: {"id"=>"search"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:29:in `show'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (30.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.0ms)
+
+
+Started GET "/colleges/search/d" for ::1 at 2015-04-14 22:03:53 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"d"}
+Completed 500 Internal Server Error in 6ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (41.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (46.7ms)
+
+
+Started GET "/colleges/search/" for ::1 at 2015-04-14 22:03:54 -0400
+Processing by CollegesController#show as */*
+  Parameters: {"id"=>"search"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:29:in `show'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (28.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (157.5ms)
+
+
+Started GET "/colleges/search/s" for ::1 at 2015-04-14 22:04:36 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"s"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (69.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (133.0ms)
+
+
+Started GET "/colleges/search/d" for ::1 at 2015-04-14 22:04:36 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"d"}
+Completed 500 Internal Server Error in 6ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (28.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (53.9ms)
+
+
+Started GET "/colleges/search/dar" for ::1 at 2015-04-14 22:04:37 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dar"}
+Completed 500 Internal Server Error in 7ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.2ms)
+
+
+Started GET "/colleges/search/d" for ::1 at 2015-04-14 22:04:37 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"d"}
+Completed 500 Internal Server Error in 6ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (52.7ms)
+
+
+Started GET "/colleges/search/dart" for ::1 at 2015-04-14 22:04:37 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dart"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (93.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (115.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (51.3ms)
+
+
+Started GET "/colleges/search/dar" for ::1 at 2015-04-14 22:04:38 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dar"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.8ms)
+
+
+Started GET "/colleges/search/dartt" for ::1 at 2015-04-14 22:04:41 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartt"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (52.8ms)
+
+
+Started GET "/colleges/search/dart" for ::1 at 2015-04-14 22:04:42 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dart"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (2.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (25.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (51.8ms)
+
+
+Started GET "/colleges/search/dartm" for ::1 at 2015-04-14 22:04:42 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartm"}
+Completed 500 Internal Server Error in 10ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (116.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (29.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (54.7ms)
+
+
+Started GET "/colleges/search/dartmou" for ::1 at 2015-04-14 22:04:43 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmou"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.6ms)
+
+
+Started GET "/colleges/search/dartmouth" for ::1 at 2015-04-14 22:04:43 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmouth"}
+Completed 500 Internal Server Error in 81ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (5.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (55.0ms)
+
+
+Started GET "/colleges/search/dartmou" for ::1 at 2015-04-14 22:04:43 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmou"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (24.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (49.7ms)
+
+
+Started GET "/colleges/search/dartmouth" for ::1 at 2015-04-14 22:04:44 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmouth"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant College::PgSearch):
+  app/models/college.rb:2:in `<class:College>'
+  app/models/college.rb:1:in `<top (required)>'
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (52.5ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 22:07:34 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.2ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.5ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 991ms (Views: 791.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/colleges-491bddd8da177ee2a335fc856e5193f2.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/application-ac9e0cfa3c458d903d621166fd60e52c.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:07:35 -0400
+
+
+Started GET "/colleges/search/d" for ::1 at 2015-04-14 22:07:40 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"d"}
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc256b4a0>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (35.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (27.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (67.9ms)
+
+
+Started GET "/colleges/search/dar" for ::1 at 2015-04-14 22:07:40 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dar"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc256b4a0>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.5ms)
+
+
+Started GET "/colleges/search/dar" for ::1 at 2015-04-14 22:07:41 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dar"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc256b4a0>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (49.7ms)
+
+
+Started POST "/users/1/photos" for ::1 at 2015-04-14 22:15:04 -0400
+Processing by PhotosController#create as JSON
+  Parameters: {"url"=>"https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429064104/b0nwpamhdjw1ec7kajc7.jpg", "user_id"=>"1"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "photos" ("url", "undergrad_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["url", "https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429064104/b0nwpamhdjw1ec7kajc7.jpg"], ["undergrad_id", 1], ["created_at", "2015-04-15 02:15:04.515720"], ["updated_at", "2015-04-15 02:15:04.515720"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 87ms (Views: 0.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 22:15:08 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 285ms (Views: 283.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 22:15:12 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mBookmark Load (0.1ms)[0m  SELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.7ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 316ms (Views: 313.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/1/photos" for ::1 at 2015-04-14 22:15:22 -0400
+Processing by PhotosController#create as JSON
+  Parameters: {"url"=>"https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429064123/az6hmss5jte5bpidbxv3.jpg", "user_id"=>"1"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "photos" ("url", "undergrad_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["url", "https://res.cloudinary.com/keepyourfriendsclose/image/upload/v1429064123/az6hmss5jte5bpidbxv3.jpg"], ["undergrad_id", 1], ["created_at", "2015-04-15 02:15:22.971560"], ["updated_at", "2015-04-15 02:15:22.971560"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-04-14 22:15:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT "photos".* FROM "photos" WHERE "photos"."undergrad_id" = ?[0m  [["undergrad_id", 1]]
+  Rendered users/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 261ms (Views: 259.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/newsfeed" for ::1 at 2015-04-14 22:15:49 -0400
+Processing by CollegesController#newsfeed as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mBookmark Load (0.1ms)[0m  [1mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered colleges/_photo.js.erb (0.1ms)
+  Rendered colleges/newsfeed.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 321ms (Views: 317.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:16:41 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:16:41 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:16:41 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:16:41 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:16:41 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:16:41 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:16:41 -0400
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:17:13 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (85.6ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1284ms (Views: 434.3ms | ActiveRecord: 86.3ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:17:28 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (24.6ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1039ms (Views: 368.9ms | ActiveRecord: 24.8ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:17:29 -0400
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:17:36 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (24.4ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 995ms (Views: 200.7ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:20:27 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (25.3ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1225ms (Views: 437.6ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/colleges-491bddd8da177ee2a335fc856e5193f2.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/assets/application-ac9e0cfa3c458d903d621166fd60e52c.js?body=1" for ::1 at 2015-04-14 22:20:29 -0400
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:20:49 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (25.9ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1706ms (Views: 941.7ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/colleges/search/d" for ::1 at 2015-04-14 22:20:53 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"d"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (38.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (29.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (65.2ms)
+
+
+Started GET "/colleges/search/da" for ::1 at 2015-04-14 22:20:54 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"da"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (28.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (44.1ms)
+
+
+Started GET "/colleges/search/dar" for ::1 at 2015-04-14 22:20:55 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dar"}
+Completed 500 Internal Server Error in 74ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.6ms)
+
+
+Started GET "/colleges/search/dart" for ::1 at 2015-04-14 22:20:56 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dart"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (91.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (116.2ms)
+
+
+Started GET "/colleges/search/dartmo" for ::1 at 2015-04-14 22:20:57 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmo"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (117.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (27.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (53.1ms)
+
+
+Started GET "/colleges/search/dartmou" for ::1 at 2015-04-14 22:20:57 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmou"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (103.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (49.1ms)
+
+
+Started GET "/colleges/search/dartmout" for ::1 at 2015-04-14 22:20:57 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmout"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (44.5ms)
+
+
+Started GET "/colleges/search/dartmouth" for ::1 at 2015-04-14 22:20:58 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmouth"}
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (31.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.2ms)
+
+
+Started GET "/colleges/search/dartmou" for ::1 at 2015-04-14 22:20:58 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"dartmou"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.2ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:21:21 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (25.2ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1050ms (Views: 315.6ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/colleges-8bbae808b49b7e5b089254bf360ca60e.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/application-cd7c326d7cdcc5677276e0f219788510.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:21:22 -0400
+
+
+Started GET "/colleges/search/p" for ::1 at 2015-04-14 22:21:24 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"p"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (46.7ms)
+
+
+Started GET "/colleges/search/pr" for ::1 at 2015-04-14 22:21:24 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"pr"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (45.6ms)
+
+
+Started GET "/colleges/search/prr" for ::1 at 2015-04-14 22:22:15 -0400
+Processing by CollegesController#search as */*
+  Parameters: {"school_name"=>"prr"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (31.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (49.2ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:22:16 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (23.2ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 958ms (Views: 298.4ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/colleges-69848a89598e47bfbfadfc8c5bf839a7.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/application-7990a650eba8498883025c40217b2826.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:17 -0400
+
+
+Started GET "/colleges/search/p" for ::1 at 2015-04-14 22:22:18 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"p"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (49.9ms)
+
+
+Started GET "/colleges/search/pr" for ::1 at 2015-04-14 22:22:19 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"pr"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (62.5ms)
+
+
+Started GET "/colleges/search/pri" for ::1 at 2015-04-14 22:22:20 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"pri"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.9ms)
+
+
+Started GET "/colleges/search/prin" for ::1 at 2015-04-14 22:22:20 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"prin"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (46.2ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:22:34 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (27.8ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1051ms (Views: 386.5ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/colleges-e4ffed98d48b62702cc5bbbd6c9fb033.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/assets/application-b00b103666d6724fc151ada010c76550.js?body=1" for ::1 at 2015-04-14 22:22:35 -0400
+
+
+Started GET "/colleges/search/p" for ::1 at 2015-04-14 22:22:37 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"p"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc6cb61e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (25.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (45.7ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:23:28 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (108.3ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 994ms (Views: 261.7ms | ActiveRecord: 110.3ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/application-b00b103666d6724fc151ada010c76550.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/assets/colleges-e4ffed98d48b62702cc5bbbd6c9fb033.js?body=1" for ::1 at 2015-04-14 22:23:30 -0400
+
+
+Started GET "/colleges/search/pr" for ::1 at 2015-04-14 22:23:31 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"pr"}
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc68b2ee8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (79.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (105.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (46.3ms)
+
+
+Started GET "/colleges/search/pr" for ::1 at 2015-04-14 22:23:32 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"pr"}
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc68b2ee8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (103.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.8ms)
+
+
+Started GET "/colleges/search/prin" for ::1 at 2015-04-14 22:23:32 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"prin"}
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc68b2ee8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.5ms)
+
+
+Started GET "/colleges/search/princ" for ::1 at 2015-04-14 22:23:33 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"princ"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc68b2ee8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (45.9ms)
+
+
+Started GET "/colleges/search/prince" for ::1 at 2015-04-14 22:23:33 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"prince"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc68b2ee8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (50.6ms)
+
+
+Started GET "/colleges/search/prince" for ::1 at 2015-04-14 22:23:34 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"prince"}
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc68b2ee8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (46.2ms)
+
+
+Started GET "/explore" for ::1 at 2015-04-14 22:23:53 -0400
+Processing by CollegesController#explore as HTML
+  [1m[35mCollege Load (29.1ms)[0m  SELECT "colleges".* FROM "colleges"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered colleges/explore.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1022ms (Views: 267.7ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/assets/bookmarks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/colleges-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/photos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/application-b916ac335957672ecb2e3b223bba3753.css?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/welcome-0236302387705721ee206f8ef566aea3.css?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/users-7156460277c1961abeb11103ae246a3e.css?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/colleges-e4ffed98d48b62702cc5bbbd6c9fb033.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/bookmarks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/photos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/assets/application-b00b103666d6724fc151ada010c76550.js?body=1" for ::1 at 2015-04-14 22:23:54 -0400
+
+
+Started GET "/colleges/search/d" for ::1 at 2015-04-14 22:23:55 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"d"}
+Completed 500 Internal Server Error in 99ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc70801e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (79.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (123.8ms)
+
+
+Started GET "/colleges/search/da" for ::1 at 2015-04-14 22:23:56 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"da"}
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc70801e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (27.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (79.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (23.8ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (129.1ms)
+
+
+Started GET "/colleges/search/dar" for ::1 at 2015-04-14 22:23:57 -0400
+Processing by CollegesController#search as JSON
+  Parameters: {"school_name"=>"dar"}
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `postgresql_version' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x007fbcc70801e8>):
+  app/controllers/colleges_controller.rb:39:in `search'
+
+
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (82.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (105.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (22.2ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/student/.rvm/gems/ruby-2.0.0-p598/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (53.7ms)
