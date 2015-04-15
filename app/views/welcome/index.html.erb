@@ -1,22 +1,35 @@
-<h1>Dabunk</h1>
 
+<div class="jumbotron">
+  <div class="container">
+  <h1>Dabunk</h1>
+  <p>The best way to discover the social scenes of colleges. <br> Log in or Register to browse schools and their students. </p>
+  </div>
 
 <div id="SessionForms">
 
-  <span> Login </span>
+  <div id="LoginForm">
   <form id="loginForm" action="/login">
-    <input type="text" name="email" placeholder="email"></input>
-    <input type="password" name="password" placeholder="password"></input>
+    <input type="text" name="email" placeholder="Email"></input>
+    <input type="password" name="password" placeholder="Password"></input>
     <button id="login">Login</button>
   </form>
+  </div>
 
-  <span> Or Register  </span>
+  <div id="RegisterForm">
+  <span> Sign Up </span>
   <form id="registrationForm" action="/users" method="post">
-    <input type="text" name="type" placeholder="Student or Undergrad?"></input>
-    <input type="text" name="name" placeholder="first and last name"></input>
-    <input type="text" name="email" placeholder="email"></input>
-    <input type="password" name="password" placeholder="password"></input>
-    <button id="register">Register</button>
-  </form>
+    <input type="radio" name="type" value="student"> High School Student </input><br>
 
+<input type="radio" name="type" value="undergrad"> Undergraduate Student </input>
+
+
+    <input type="text" name="type" placeholder="Student or Undergrad?"></input><br>
+    <input type="text" name="name" placeholder="First and Last Name"></input><br>
+    <input type="text" name="email" placeholder="Email"></input><br>
+    <input type="password" name="password" placeholder="Password"></input><br><br>
+    <button id="register">Sign Up </button><br>
+  </form>
+  </div>
+
+</div>
 </div>

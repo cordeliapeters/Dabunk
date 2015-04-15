@@ -1,7 +1,7 @@
 # Institution_ID,Institution_Name,Institution_Address,Institution_City,Institution_State,Institution_Zip,Institution_Phone,Institution_OPEID,Institution_IPEDS_UnitID,Institution_Web_Address,Campus_ID,Campus_Name,Campus_Address,Campus_City,Campus_State,Campus_Zip,Campus_IPEDS_UnitID,Accreditation_Type,Agency_Name,Agency_Status,Program_Name,Accreditation_Status,Accreditation_Date_Type,Periods,Last Action
 
 require 'csv'
-
+require 'json'
 
 # file = CSV.readlines('colleges')
 # file.shift
@@ -13,19 +13,21 @@ require 'csv'
 # end
 
 
+file = File.read(File.expand_path('db/campus-data.json', Rails.root))
+schools_array = JSON.parse(file)
+schools_array.each do |school|
+    population = school["women_total"].to_i + school["men_total"].to_i
+    acronym = school["INSTNM"].split(" ").map {|word| word[0].upcase }.join('')
 
-College.create(name: "Dartmouth")
-College.create(name: "Harvard")
-College.create(name: "Yale")
-College.create(name: "Denver")
-College.create(name: "Duke")
-College.create(name: "Princeton")
-College.create(name: "Syracuse")
-College.create(name: "Bucknell")
-College.create(name: "Brown")
-College.create(name: "Harvey Mudd")
+    new_school = College.create(
+        name: school["INSTNM"],
+        school_type: school["Sector_desc"],
+        state: school["State"],
+        city: school["City"].titleize,
+        population: population,
+        acronym: acronym,
+        street: school["Address"].titleize,
+        zip: school["ZIP"],
+        )
+end
 
-User.create(type: "Undergrad", name: "Cordelia Peters")
-User.create(type: "Undergrad", name: "August Peters")
-User.create(type: "Undergrad", name: "Natalie Gellman")
-User.create(type: "Undergrad", name: "Natalie Bruener")
