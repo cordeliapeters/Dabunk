@@ -19,7 +19,35 @@ schools_array.each do |school|
     population = school["women_total"].to_i + school["men_total"].to_i
     acronym = school["INSTNM"].split(" ").map {|word| word[0].upcase }.join('')
 
-    new_school = College.create(
+    if (school["MURD11"].to_i == 0 &&
+        school["NEG_M11"].to_i == 0 &&
+        school["FORCIB11"].to_i == 0 &&
+        school["NONFOR11"].to_i == 0 &&
+        school["ROBBE11"].to_i == 0 &&
+        school["AGG_A11"].to_i == 0 &&
+        school["BRGLA11"].to_i == 0 &&
+        school["VEHIC11"].to_i == 0 &&
+        school["ARSON11"].to_i == 0 &&
+        school["MURD12"].to_i == 0 &&
+        school["NEG_M12"].to_i == 0 &&
+        school["FORCIB12"].to_i == 0 &&
+        school["NONFOR12"].to_i == 0 &&
+        school["ROBBE12"].to_i == 0 &&
+        school["AGG_A12"].to_i == 0 &&
+        school["BRGLA12"].to_i == 0 &&
+        school["VEHIC12"].to_i == 0 &&
+        school["ARSON12"].to_i == 0 &&
+        school["MURD13"].to_i == 0 &&
+        school["NEG_M13"].to_i == 0 &&
+        school["FORCIB13"].to_i == 0 &&
+        school["NONFOR13"].to_i == 0 &&
+        school["ROBBE13"].to_i == 0 &&
+        school["AGG_A13"].to_i == 0 &&
+        school["BRGLA13"].to_i == 0 &&
+        school["VEHIC13"].to_i == 0 &&
+        school["ARSON13"].to_i == 0)
+    else
+        new_school = College.create(
         name: school["INSTNM"],
         school_type: school["Sector_desc"],
         state: school["State"],
@@ -29,5 +57,6 @@ schools_array.each do |school|
         street: school["Address"].titleize,
         zip: school["ZIP"],
         )
+    end
 end
 

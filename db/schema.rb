@@ -22,13 +22,18 @@ ActiveRecord::Schema.define(version: 20150325050512) do
 
   create_table "colleges", force: :cascade do |t|
     t.string   "name"
+    t.integer  "population"
+    t.string   "school_type"
+    t.string   "acronym"
     t.string   "address"
+    t.string   "street"
     t.string   "city"
     t.string   "state"
     t.string   "zip"
     t.string   "web_url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "greek_life"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "photos", force: :cascade do |t|
@@ -67,6 +72,8 @@ ActiveRecord::Schema.define(version: 20150325050512) do
     t.string   "activities"
     t.string   "major"
     t.string   "minor"
+    t.integer  "college_id"
+    t.string   "greek"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
