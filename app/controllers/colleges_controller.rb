@@ -41,6 +41,7 @@ class CollegesController < ApplicationController
   end
 
   def search_school
+    p params
     school = College.where(name: params[:school_name])
     if school
       redirect_to college_path(school)
